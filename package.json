@@ -1,0 +1,19 @@
+{
+  "name": "drupal-dev-tools",
+  "version": "1.0.0",
+  "description": "Task runner for drupal.",
+  "main": "gulpfile.js",
+  "devDependencies": {
+        "browser-sync": "^2.8.1",
+        "gulp": "^3.9.0",
+        "gulp-autoprefixer": "^2.3.1",
+        "gulp-sass": "^2.0.4",
+        "gulp-shell": "^0.4.2",
+        "gulp-util": "^3.0.7"
+  },
+  "scripts": {
+        "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "author": "ph53",
+  "license": "MIT"
+}
