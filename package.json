@@ -4,15 +4,18 @@
   "description": "Task runner for drupal.",
   "main": "gulpfile.js",
   "devDependencies": {
-        "browser-sync": "^2.8.1",
-        "gulp": "^3.9.0",
-        "gulp-autoprefixer": "^2.3.1",
-        "gulp-sass": "^2.0.4",
-        "gulp-shell": "^0.4.2",
-        "gulp-util": "^3.0.7"
+    "browser-sync": "^2.8.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-shell": "^0.4.2",
+    "gulp-util": "^3.0.7",
+    "kss": "^3.0.0-beta.16",
+    "michelangelo": "^0.5.1",
+    "npm-run": "^4.1.0"
   },
   "scripts": {
-        "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
   },
   "author": "ph53",
   "license": "MIT"

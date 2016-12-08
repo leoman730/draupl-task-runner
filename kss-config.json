@@ -1,0 +1,17 @@
+{
+	"title"        : "NYULAW School Styleguide",
+	"mask"         : "*.less",	
+
+	"//": "relative to this file.",
+	"source"       : ["../drupal/sites/all/themes/nyulaw_responsive/less",
+						"../drupal/sites/all/themes/nyulaw_responsive/styleguide"],
+	"destination"  : "../drupal/sites/all/themes/nyulaw_responsive/styleguide/build",
+	"builder"      : "node_modules/michelangelo/kss_styleguide/custom-template/",
+	
+	"//": "relative to source.",
+	"homepage"     : "../styleguide/homepage.md",
+
+	"//": "relative to the generated style guide.",
+	"css": ["../css/style.css","https://cloud.typography.com/7124694/6831952/css/fonts.css"],
+	"js" : []
+}
