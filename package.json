@@ -18,5 +18,11 @@
     "postinstall": "find node_modules/ -name '*.info' -type f -delete"
   },
   "author": "ph53",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gulp-less": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "less": "^3.0.1",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
 }
