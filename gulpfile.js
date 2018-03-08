@@ -2,8 +2,8 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
-    shell = require('gulp-shell');
-util = require('gulp-util');
+    shell = require('gulp-shell'),
+    util = require('gulp-util');
 
 
 var drupal_root = '/Users/ray/git_repos/nyu-law/drupal';
@@ -41,7 +41,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
-        }))
+        }));
 });
 
 /**
@@ -71,7 +71,7 @@ gulp.task('reload', ['clearcache'], function() {
 gulp.task('watch', function() {
     // gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['sass']);
     // gulp.watch('**/*.{php,inc,info}',['reload']);
-    gulp.watch(drupal_root + "/sites/all/themes/nyulaw/**/*", ['reload'])
+    gulp.watch(drupal_root + "/sites/all/themes/nyulaw/**/*", ['reload']);
 });
 
 /**
