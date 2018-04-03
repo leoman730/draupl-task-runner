@@ -89,13 +89,6 @@ gulp.task('watch', function() {
 gulp.task('default', ['browser-sync', 'watch']);
 
 
-/** Watch less files changed and invoke drush cc less */
-gulp.task('watch-less', function() {
-    gulp.watch(
-        [
-          drupal_theme_path + "/less/*",
-        ], ['less', 'styleguide-kss','clearcache']);
-});
 
 
 
@@ -108,9 +101,20 @@ gulp.task('less', function(){
     }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(drupal_theme_path + '/css'));
-
 });
 
+
+/** Watch less files changed and invoke drush cc less */
+gulp.task('watch-less', function() {
+    gulp.watch(
+        [
+          drupal_theme_path + "/less/*",
+        ], ['rmcss','less']);
+});
+
+gulp.task('rmcss', shell.task([
+  'rm -f ' + drupal_theme_path + '/css/*',
+]));
 
 
 gulp.task('styleguide-kss', shell.task([
