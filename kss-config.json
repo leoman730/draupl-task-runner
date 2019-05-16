@@ -13,7 +13,7 @@
 
 	"//": "relative to the generated style guide.",
 	"css": [
-    "../css/style.css",
+    "../../css/style.css",
     "https://cloud.typography.com/7124694/6831952/css/fonts.css"],
 	"js" : []
 }
